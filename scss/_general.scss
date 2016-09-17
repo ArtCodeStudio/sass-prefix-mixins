@@ -1,0 +1,122 @@
+// €see https://www.diffchecker.com/jz7tWb0v
+
+// @include position() ;
+@mixin position($value) {
+  @if $enable-autoprefixer {
+    @if $value == sticky {
+      position: -webkit-#{$value};
+      position: -moz-#{$value};
+      position: -ms-#{$value};
+      position: -o-#{$value};
+    }
+  }
+  position: $value;
+}
+
+@mixin overflow($value) {
+  @if $enable-overflow-scrolling {
+    -webkit-overflow-scrolling: touch;
+  }
+  overflow: $value;
+}
+
+@mixin overflow-x($fmt) {
+  @if $enable-overflow-scrolling {
+    -webkit-overflow-scrolling: touch;
+  }
+  overflow-x: $value;
+}
+
+@mixin overflow-y($value) {
+  @if $enable-overflow-scrolling {
+    -webkit-overflow-scrolling: touch;
+  }
+  overflow-y: $value;
+}
+
+@mixin box-sizing($value) {
+  @if $enable-autoprefixer {
+    -webkit-box-sizing: $value;
+    //   -moz-box-sizing: $value;
+  }
+  box-sizing: $value;
+}
+
+@mixin box-shadow($value) {
+  @if $enable-autoprefixer {
+    -webkit-box-shadow: $value;
+  }
+  box-shadow: $value;
+}
+
+@mixin touch-action($value) {
+  @if $enable-autoprefixer {
+    -ms-touch-action: $value;
+  }
+  touch-action: $value;
+}
+
+@mixin user-select($value) {
+  @if $enable-autoprefixer {
+    -webkit-user-select: $value;
+      -moz-user-select: $value;
+        -ms-user-select: $value;
+  }
+  user-select: $value;
+}
+
+@mixin user-select($value) {
+  @if $enable-autoprefixer {
+    -webkit-user-select: $value;
+       -moz-user-select: $value;
+        -ms-user-select: $value;
+  }
+  user-select: $value;
+}
+
+@mixin column-count($value) {
+  @if $enable-autoprefixer {
+    -webkit-column-count: $value;
+       -moz-column-count: $value;
+  }
+  column-count: $value;
+}
+
+@mixin column-gap($value) {
+  @if $enable-autoprefixer {
+    -webkit-column-gap: $value;
+       -moz-column-gap: $value;
+  }
+  column-gap: $value;
+}
+
+@mixin appearance($value) {
+  @if $enable-autoprefixer {
+	  -webkit-appearance: $value;
+       -moz-appearance: $value;
+  }
+  appearance: $value;
+}
+
+@mixin transform($value) {
+  @if $enable-autoprefixer {
+	  -webkit-transform: $value;
+      -ms-transform: $value;
+       -o-transform: $value;
+  }
+  transform: $value;
+}
+
+@mixin backface-visibility($value) {
+  @if $enable-autoprefixer {
+	  -webkit-backface-visibility: $value;
+  }
+  backface-visibility: $value;
+}
+
+@mixin perspective($value) {
+  @if $enable-autoprefixer {
+	  -webkit-perspective: $value;
+  }
+  perspective: $value;
+}
