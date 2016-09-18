@@ -1,11 +1,11 @@
-@mixin background-clip($value) {
+@mixin vp-background-clip($value) {
   @if $enable-autoprefixer {
     -webkit-background-clip: $value;
   }
   background-clip: $value;
 }
 
-@mixin background-size($value) {
+@mixin vp-background-size($value...) {
   @if $enable-autoprefixer {
     -webkit-background-size: $value;
   }
@@ -84,7 +84,7 @@
  *
  * @see https://www.sitepoint.com/building-linear-gradient-mixin-sass/
  */
-@mixin linear-gradient($direction, $color-stops...) {
+@mixin vp-linear-gradient($direction, $color-stops...) {
   @if $enable-autoprefixer {
     // Direction has been omitted and happens to be a color-stop
     @if is-direction($direction) == false {

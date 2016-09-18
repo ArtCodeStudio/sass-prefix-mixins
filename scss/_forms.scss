@@ -1,4 +1,4 @@
-@mixin placeholder($color, $opacity: 1) {
+@mixin vp-placeholder($color, $opacity: 1) {
   @if $enable-autoprefixer {
     &::-webkit-input-placeholder {
       color: $color;
