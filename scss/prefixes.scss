@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-$enable-autoprefixer: true !default;
-$enable-overflow-scrolling: false !default;
-
+@import "variables";
 @import "flexbox";
 @import "general";
 @import "forms";

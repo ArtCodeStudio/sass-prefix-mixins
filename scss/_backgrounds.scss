@@ -33,43 +33,72 @@
     //@warn "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
   }
 
-  $conversion-map: (
-    to top          : bottom,
-    to top right    : bottom left,
-    to right top    : left bottom,
-    to right        : left,
-    to bottom right : top left,
-    to right bottom : left top,
-    to bottom       : top,
-    to bottom left  : top right,
-    to left bottom  : right top,
-    to left         : right,
-    to left top     : right bottom,
-    to top left     : bottom right
-  );
+  // $conversion-map: (
+  //   to top          : bottom,
+  //   to top right    : bottom left,
+  //   to right top    : left bottom,
+  //   to right        : left,
+  //   to bottom right : top left,
+  //   to right bottom : left top,
+  //   to bottom       : top,
+  //   to bottom left  : top right,
+  //   to left bottom  : right top,
+  //   to left         : right,
+  //   to left top     : right bottom,
+  //   to top left     : bottom right
+  // );
 
-  @if map-has-key($conversion-map, $value) {
-    @return map-get($conversion-map, $value);
+  // @if map-has-key($conversion-map, $value) {
+  //   @return map-get($conversion-map, $value);
+  // }
+
+  @if '#{$value}' == 'to top' {
+   @return bottom;
   }
 
-//   @if $value == 'to top' {
-//    @return bottom;
-//   }
+  @if $value == 'to top right' {
+   @return bottom left;
+  }
 
-//   @if $value == 'to top right' {
-//    @return bottom left;
-//   }
+  @if $value == 'to right top' {
+   @return left bottom;
+  }
 
-//   @if $value == 'to right top' {
-//    @return left bottom;
-//   }
+  @if $value == 'to right' {
+   @return left bottom;
+  }
 
-//   @if $value == 'foobar' {
-//    @return left bottom;
-//   }
+  @if $value == 'to bottom right' {
+   @return top left;
+  }
 
+  @if $value == 'to right bottom' {
+   @return left top;
+  }
 
+  @if $value == 'to bottom' {
+   @return top;
+  }
 
+  @if $value == 'to bottom left' {
+   @return top right;
+  }
+
+  @if $value == 'to left bottom' {
+   @return right top;
+  }
+
+  @if $value == 'to left' {
+   @return right;
+  }
+
+  @if $value == 'to left top' {
+   @return right bottom;
+  }
+
+  @if $value == 'to top left' {
+   @return bottom right;
+  }
 
   @return 90deg - $value;
 }

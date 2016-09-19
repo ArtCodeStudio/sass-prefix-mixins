@@ -55,16 +55,16 @@
 @mixin vp-keyframes($animationName) {
   @if $enable-autoprefixer {
     @-webkit-keyframes #{$animationName} {
-        @content;
+      @content;
     }
     @-moz-keyframes #{$animationName} {
-        @content;
+      @content;
     }
     @-o-keyframes #{$animationName} {
-        @content;
+      @content;
     }
   }
   @keyframes #{$animationName} {
-      @content;
+    @content;
   }
 }

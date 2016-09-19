@@ -1,13 +1,12 @@
-// €see https://www.diffchecker.com/jz7tWb0v
+// @see https://www.diffchecker.com/jz7tWb0v
 
-// @include position() ;
 @mixin vp-position($value) {
   @if $enable-autoprefixer {
     @if $value == sticky {
-      position: -webkit-#{$value};
-      position: -moz-#{$value};
-      position: -ms-#{$value};
-      position: -o-#{$value};
+      position: -webkit-sticky;
+      position: -moz-sticky;
+      position: -ms-sticky;
+      //position: -o-sticky;
     }
   }
   position: $value;
@@ -93,7 +92,7 @@
   @if $enable-autoprefixer {
 	  -webkit-transform: $value;
       -ms-transform: $value;
-       -o-transform: $value;
+       //-o-transform: $value;
   }
   transform: $value;
 }
