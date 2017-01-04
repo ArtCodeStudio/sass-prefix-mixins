@@ -1,5 +1,18 @@
 // @see https://www.diffchecker.com/jz7tWb0v
 
+@mixin vp-display($value) {
+  @if $enable-autoprefixer {
+    @if $value == flex {
+      @include vp-flexbox();
+    }
+    @if $value == inline-flex {
+      @include vp-inline-flex();
+    }
+  } @else {
+    display: $value;
+  }
+}
+
 @mixin vp-position($value) {
   @if $enable-autoprefixer {
     @if $value == sticky {
