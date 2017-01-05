@@ -1,6 +1,6 @@
 {
   "name": "sass-autoprefixer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collection of mixins to add vendor prefixes directly in scss",
   "main": "scss/prefixes.scss",
   "scripts": {
