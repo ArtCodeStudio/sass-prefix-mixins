@@ -54,11 +54,11 @@
   box-sizing: $value;
 }
 
-@mixin vp-box-shadow($value) {
+@mixin vp-box-shadow($args...) {
   @if $enable-autoprefixer {
-    -webkit-box-shadow: $value;
+    -webkit-box-shadow: $args;
   }
-  box-shadow: $value;
+  box-shadow: $args;
 }
 
 @mixin vp-touch-action($value) {
