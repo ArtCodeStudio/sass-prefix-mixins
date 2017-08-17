@@ -1,14 +1,14 @@
-# sass-autoprefixer
+# sass-prefix-mixins
 Collection of mixins to add vendor prefixes directly in sass/scss.
 
 ## install
 ### NPM
 ```
-npm install sass-autoprefixer
+npm install sass-prefix-mixins
 ```
 ### Bower
 ```
-bower install sass-autoprefixer
+bower install sass-prefix-mixins
 ```
 
 ## Using
@@ -18,7 +18,7 @@ Add the scss file to your your own scss file:
 ```scss
 @import "./../bower_components/sass-autoprefixer/scss/prefixes";
 ```
-replace your scss statement with its sass-autoprefixer mixin, e.g. replace
+replace your scss statement with its sass-prefix-mixins mixin, e.g. replace
 
 ```scss
 .your-class {
