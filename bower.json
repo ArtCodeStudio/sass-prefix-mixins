@@ -1,7 +1,7 @@
 {
-  "name": "sass-autoprefixer",
-  "version": "1.0.1",
-  "homepage": "https://github.com/JumpLinkNetwork/sass-autoprefixer",
+  "name": "sass-prefix-mixins",
+  "version": "1.0.2",
+  "homepage": "https://github.com/JumpLinkNetwork/sass-prefix-mixins",
   "authors": [
     "Pascal Garber <pascal@jumplink.eu>"
   ],
