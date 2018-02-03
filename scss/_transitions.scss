@@ -22,7 +22,7 @@
   transition-duration: $value;
 }
 
-@mixin vp-transition-property($value) {
+@mixin vp-transition-property($value...) {
   @if $enable-autoprefixer {
     -webkit-transition-property: $value;
          -o-transition-property: $value;
